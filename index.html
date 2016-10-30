@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>HTML5/CSS3图片网格动画特效DEMO演示</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <!-- original by http://thecodeplayer.com -->
+<div class="grid"></div>
+<span class="animate">开始动画</span>
+
+  <script src='js/jquery.js'></script>
+  <script src='js/jquery.easing.min.js'></script>
+
+  <script src="js/index.js"></script>
+<div style="text-align:center;clear:both;margin-top:30px">
+<!-- <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script> -->
+<!-- <script src="/follow.js" type="text/javascript"></script> -->
+</div>
+<script type="text/javascript">
+  function runAsync(){
+    var def = $.Deferred();
+    //做一些异步操作
+    setTimeout(function(){
+        console.log('执行完成');
+        def.resolve('随便什么数据');
+    }, 2000);
+    return def;
+}
+
+// runAsync().then(function(data){
+//     console.log(data)
+// });
+</script>
+</body>
+
+</html>
